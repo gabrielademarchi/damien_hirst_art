@@ -19,7 +19,7 @@ def change_color(colors_list):
 def dot_pen(dot_size, gap):
     timmy.dot(dot_size)
     timmy.penup()
-    timmy.forward(gap)
+    timmy.forward(gap)  # dot doesnt need pendown
 
 
 def t_position(x, y):
@@ -28,10 +28,10 @@ def t_position(x, y):
     timmy.pendown()
 
 
-y_coord = 0
 gap = 50
 size = 20
 
+y_coord = 0
 for row in range(10):
     t_position(-200, -200 + y_coord)
     for column in range(10):
